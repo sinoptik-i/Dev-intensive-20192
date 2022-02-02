@@ -14,6 +14,7 @@ abstract class BaseMessage(
     companion object AbstractFactory {
         val lastId = -1
         fun makeMessage(
+
             from: User?, chat: Chat, date: Date = Date(),
             type: String, payload: Any?, isIncoming: Boolean = false
         ): BaseMessage? {
